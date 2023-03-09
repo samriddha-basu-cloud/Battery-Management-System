@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="/icon.png" type="image/x-icon">  
+</head>
+<body>
+    <div class="cursor"></div>
+    <header> 
+        <a href="index.html" class="logo"> <img src="/icon.png" alt="Logo VCI"> <span>Virtual Controls India pvt. LTD.</span></a>
+        <!-- <center> Battery Management </center> -->
+
+        <ul class="navbar">
+            <li><a href="#" class="active">Dashboard</a></li>
+            <li><a href="#">Real Time View</a></li>
+            <li><a href="#">Configuration</a></li>
+            <li><a href="#">Reports</a></li>
+        </ul>
+
+        <div class="main">
+            <a href="#" class="user"><i class="ri-user-fill"></i>Sign In</a>
+            <a href="#">Register</a>
+            <div class="bx bx-menu" id="menu-icon"> </div>
+        </div>
+
+    </header>
+    <section class="info">
+        <label for="site">Site Id :</label> 
+        <label for="cellnumber">Cell Number :</label>
+        <label for="get">Get Details :</label>
+        <label for="startdateandtime">Start Date and Time :</label>
+        <label for="enddate">End Date :</label>
+        <label for="customename">Customer Name :</label>
+    </section>
+    <section class="info1">
+        <select name="site" id="site">
+            <option value="siteselection" disabled selected>Select</option>
+            <option value="site1">site1</option>
+            <option value="site2">site2</option>
+            <option value="site3">site3</option>
+        </select>
+
+        <select name="cellnumber" id="cellnumber">
+            <option value="cellnumberselection" disabled selected>Select Cell Number</option>
+            <option value="cellnumber1">cellnumber1</option>
+            <option value="cellnumber2">cellnumber2</option>
+            <option value="cellnumber3">cellnumber3</option>
+        </select>
+
+        <br>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+        
+
+        <form action="/action_page.php">
+            <input type="datetime-local" id="startdateandtime" name="startdateandtime">
+            <input type="submit" id="btn">
+          </form>
+
+          <form action="/action_page.php">
+            <input type="date" id="enddate" name="enddate">
+            <input type="submit" id="btn">
+          </form>
+
+        <select name="customename" id="customename">
+            <option value="customenameselection" disabled selected>Select Name</option>
+            <option value="customename1">customename1</option>
+            <option value="customename2">customename2</option>
+            <option value="customename3">customename3</option>
+        </select>
+    </section>
+
+    <div class="grid-container">
+        <div class="item1">  <h4>Device Location </h4>
+            <div class="google-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12894.355088457492!2d77.53254372527599!3d28.805459928401515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf51f5aadb701%3A0x39add03eb3926d26!2sSRM%20Institute%20of%20Science%20and%20Technology%20NCR%20Campus!5e0!3m2!1sen!2sin!4v1678214093734!5m2!1sen!2sin" width="350" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="item2"><h4>Manufacturer Details</h4>
+            <table>
+                <tr>
+                  <td>First Used Date : </td>
+                  <td>02-11-2020</td>
+                </tr>
+                <tr>
+                    <td>Battery Serial number : </td>
+                    <td>123456789</td>
+                </tr>
+                <tr>
+                    <td>Type of Battery Bank : </td>
+                    <td>VRLA</td>
+                </tr>
+                <tr>
+                    <td>Ah Capacity : </td>
+                    <td>100Ah</td>
+                </tr>
+                <tr>
+                    <td>Manufacturer Name : </td>
+                    <td>EXIDE</td>
+                </tr>
+                <tr>
+                    <td>Design Voltage : </td>
+                    <td>220 Volts</td>
+                </tr>
+                <tr>
+                    <td>Individual Cell Voltage : </td>
+                    <td>2 Volts</td>
+                </tr>
+              </table>
+        </div>
+        <div class="item3"><h4>Instantaneous</h4>
+            <table>
+                <tr>
+                  <td>String Voltage : </td>
+                  <td>228.7V</td>
+                </tr>
+                <tr>
+                    <td>Current : </td>
+                    <td>0.4A</td>
+                </tr>
+                <tr>
+                    <td>State of Charge(SOC) : </td>
+                    <td>99.85%</td>
+                </tr>
+                <tr>
+                    <td>Depth of Discharge(DOD) : </td>
+                    <td>0.15%</td>
+                </tr>
+                <tr>
+                    <td>Ambient Temperature : </td>
+                    <td>28.69°C</td>
+                </tr>
+              </table>
+        </div>  
+        <div class="item4"><h4>Cummulative</h4>
+            <table>
+                <tr>
+                  <td>Charge-Discharge : </td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                    <td>Ampere HourIn : </td>
+                    <td>74.0632 Ah</td>
+                </tr>
+                <tr>
+                    <td>Ampere HourOut : </td>
+                    <td>12.3776 Ah</td>
+                </tr>
+                <tr>
+                    <td>Charging Energy : </td>
+                    <td>17.3129 kWh</td>
+                </tr>
+                <tr>
+                    <td>Discharging Energy : </td>
+                    <td>2.6995 kWh</td>
+                </tr>
+                <tr>
+                    <td>Battery Run Hours : </td>
+                    <td>03:41:30</td>
+                </tr>
+              </table>
+        </div>
+        <div class="item5"><h4>Charge Cycle-Wise</h4>
+            <table>
+                <tr>
+                  <td>Peak Charge Current : </td>
+                  <td>0.6 A</td>
+                </tr>
+                <tr>
+                    <td>Average Charge Current : </td>
+                    <td>0.3315 A</td>
+                </tr>
+                <tr>
+                    <td>Ampere HourIn : </td>
+                    <td>0.2808 Ah</td>
+                </tr>
+                <tr>
+                    <td>Charge Time : </td>
+                    <td>00:50:50</td>
+                </tr>
+              </table>
+        </div>
+        <div class="item6"><h4>Discharge Cycle-Wise</h4>
+            <table>
+                <tr>
+                  <td>Peak Discharge Current : </td>
+                  <td>3.5 A</td>
+                </tr>
+                <tr>
+                    <td>Average Discharge Current : </td>
+                    <td>3.4083 A</td>
+                </tr>
+                <tr>
+                    <td>Ampere HourOut : </td>
+                    <td>1.9314 Ah</td>
+                </tr>
+                <tr>
+                    <td>Discharge Time : </td>
+                    <td>00:34:00</td>
+                </tr>
+              </table>
+        </div>
+        <div class="item7">
+            <h4>Alarms</h4>
+                <div class="grid-container1">
+                    <div class="batterystatus">
+                        Battery Status
+                        <br> 
+                        <p style="color: green;">
+                            Charging
+                        </p>
+                    </div>
+                    <div class="stringvolatage">
+                        String Volatage
+                        <br> 
+                        <p style="color: green;">
+                            Normal
+                        </p>
+                    </div>
+                    <div class="stringcommunnicationstatus">
+                        String Communnication Status
+                        <br> 
+                        <p style="color: green;">
+                            Communicating
+                        </p>
+                    </div>  
+                    <div class="stateofcharge">
+                        State of Charge
+                        <br> 
+                        <p style="color: green;">
+                            Normal
+                        </p>
+                    </div>
+                    <div class="stringcurrent">
+                        String Current
+                        <br> 
+                        <p style="color: green;">
+                            Normal
+                        </p>
+                    </div>
+                    <div class="ambienttemperature">
+                        Ambient Temperature
+                        <br> 
+                        <p style="color: green;">
+                            Normal
+                        </p>
+                    </div>
+                    <div class="cellvoltage">
+                        Cell Voltage
+                        <br> 
+                        <p style="color: gray;">
+                            Low Voltages : 4
+                            <br>
+                            High Voltages : 0
+                        </p>
+                    </div>
+                    <div class="celltemperature">
+                        Cell Temperature
+                        <br> <br>
+                        <p style="color: gray;">
+                            High : 0
+                        </p>
+                    </div>
+                    <div class="cellcommunication">
+                        Cell Communication
+                        <br>
+                        <p style="color: gray;">
+                            Communicating : 104
+                            <br>
+                            Not Communicating : 0
+                        </p>
+                    </div>
+                </div>             
+        </div>
+        <div class="item8">
+            <h4>Cells Data</h4>
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'Pictorial')" id="defaultOpen">Pictorial</button>
+                <button class="tablinks" onclick="openCity(event, 'Graphical')">Graphical</button>
+                <button class="tablinks" onclick="openCity(event, 'Tabular')">Tabular</button>
+            </div>
+              
+              <div id="Pictorial" class="tabcontent">
+                <div class="statusofbattery"><h3>Charging</h3> <i class="ri-battery-charge-line" style="color: green; font-size: 50px;"></i></div>
+                <div class="myDIV">
+                    <div class="battery1"><i class="ri-battery-charge-line" style="color: green; font-size: 50px;"></i> <br> Cell 1<br>2.22 V <br> 26°C</div>
+                    <div class="battery2"><i class="ri-battery-charge-line" style="color: green; font-size: 50px;"></i> <br> Cell 2<br>2.22 V <br> 26°C</div>
+                    <div class="battery3"><i class="ri-battery-charge-line" style="color: green; font-size: 50px;"></i> <br> Cell 3<br>2.22 V <br> 26°C</div>
+                    <div class="battery4"><i class="ri-battery-charge-line" style="color: green; font-size: 50px;"></i> <br> Cell 4<br>2.22 V <br> 26°C</div>
+                    <div class="battery5"><i class="ri-battery-charge-line" style="color: green; font-size: 50px;"></i> <br> Cell 5<br>2.22 V <br> 26°C</div>
+                    <div class="battery6"><i class="ri-battery-charge-line" style="color: green; font-size: 50px;"></i> <br> Cell 6<br>2.22 V <br> 26°C</div>
+                    <div class="battery7"><i class="ri-battery-charge-line" style="color: green; font-size: 50px;"></i> <br> Cell 7<br>2.22 V <br> 26°C</div>
+                    <div class="battery8"><i class="ri-battery-charge-line" style="color: green; font-size: 50px;"></i> <br> Cell 8<br>2.22 V <br> 26°C</div>
+                    <div class="battery9"><i class="ri-battery-charge-line" style="color: green; font-size: 50px;"></i> <br> Cell 9<br>2.22 V <br> 26°C</div>
+                    <div class="battery10"><i class="ri-battery-charge-line" style="color: green; font-size: 50px;"></i> <br> Cell 10<br>2.22 V <br> 26°C</div>
+                    <div class="battery11"><i class="ri-battery-charge-line" style="color: green; font-size: 50px;"></i> <br> Cell 11<br>2.22 V <br> 26°C</div>
+                    <div class="battery12"><i class="ri-battery-charge-line" style="color: green; font-size: 50px;"></i> <br> Cell 12<br>2.22 V <br> 26°C</div>
+                    <div class="battery13"><i class="ri-battery-charge-line" style="color: green; font-size: 50px;"></i> <br> Cell 13<br>2.22 V <br> 26°C</div>
+                    <div class="battery14"><i class="ri-battery-charge-line" style="color: green; font-size: 50px;"></i> <br> Cell 14<br>2.22 V <br> 26°C</div>
+                    <div class="battery15"><i class="ri-battery-charge-line" style="color: green; font-size: 50px;"></i> <br> Cell 15<br>2.22 V <br> 26°C</div>
+                    <div class="battery16"><i class="ri-battery-charge-line" style="color: green; font-size: 50px;"></i> <br> Cell 16<br>2.22 V <br> 26°C</div>
+                    <div class="battery17"><i class="ri-battery-charge-line" style="color: green; font-size: 50px;"></i> <br> Cell 17<br>2.22 V <br> 26°C</div>
+                    <div class="battery18"><i class="ri-battery-charge-line" style="color: green; font-size: 50px;"></i> <br> Cell 18<br>2.22 V <br> 26°C</div>
+                    <div class="battery19"><i class="ri-battery-charge-line" style="color: green; font-size: 50px;"></i> <br> Cell 19<br>2.22 V <br> 26°C</div>
+                    <div class="battery20"><i class="ri-battery-charge-line" style="color: green; font-size: 50px;"></i> <br> Cell 20<br>2.22 V <br> 26°C</div>
+                    <div class="battery21"><i class="ri-battery-charge-line" style="color: green; font-size: 50px;"></i> <br> Cell 21<br>2.22 V <br> 26°C</div>
+                    <div class="battery22"><i class="ri-battery-charge-line" style="color: green; font-size: 50px;"></i> <br> Cell 22<br>2.22 V <br> 26°C</div>
+                    <div class="battery23"><i class="ri-battery-charge-line" style="color: green; font-size: 50px;"></i> <br> Cell 23<br>2.22 V <br> 26°C</div>
+                    <div class="battery24"><i class="ri-battery-charge-line" style="color: green; font-size: 50px;"></i> <br> Cell 24<br>2.22 V <br> 26°C</div>
+                  </div>
+                
+                <!-- Pictorial Representation -->
+
+              </div>
+              
+              <div id="Graphical" class="tabcontent">
+                <div class="statusofbattery"><h3>Charging</h3> <i class="ri-battery-charge-line" style="color: green; font-size: 50px;"></i></div>
+                
+                <!-- Graphical Representation -->
+              </div>
+              
+              <div id="Tabular" class="tabcontent">
+                <div class="statusofbattery"><h3>Charging</h3> <i class="ri-battery-charge-line" style="color: green; font-size: 50px;"></i></div>
+                
+                <!-- Tabular Representation -->
+              </div>
+        </div>
+      </div>
+
+      <footer>
+        <center>All Copyrights preserved by Virtual Controls India pvt. LTD. © 2023-24</center>
+      </footer>
+
+    <script src="script.js"></script> 
+</body>
+</html>
