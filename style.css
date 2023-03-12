@@ -196,6 +196,36 @@ h4{
 
 }
 
+.info2{
+  display: flex;
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0px 10px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px 25px 8px;
+}
+
+.info3{
+  display: flex;
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0px 10px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px 25px 20px;
+
+}
+
+input[type=number] {
+  width: 20%;
+  padding: 1.2px 1px;
+  margin: 2px 0;
+  box-sizing: border-box;
+}
+
 .switch {
     position: relative;
     display: inline-block;
