@@ -30,7 +30,7 @@ window.addEventListener("click", () => {
   }
 });
 
-function openCity(evt, cityName) {
+function openTab(evt, tabNm) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
@@ -40,9 +40,30 @@ function openCity(evt, cityName) {
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(tabNm).style.display = "block";
   evt.currentTarget.className += " active";
+  
 }
-
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+
+function openTab1(event, tabName) {
+  var j, tabcontent1, tablinks1;
+  tabcontent1 = document.getElementsByClassName("tabcontent1");
+  for (j = 0; j < tabcontent1.length; j++) {
+    tabcontent1[j].style.display = "none";
+  }
+  tablinks1 = document.getElementsByClassName("tablinks1");
+  for (j = 0; j < tablinks1.length; j++) {
+    tablinks1[j].className = tablinks1[j].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  event.currentTarget.className += " active";
+  
+}
+
+//map iframe max height property needs to be altered
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen1").click();

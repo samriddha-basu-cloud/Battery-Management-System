@@ -41,6 +41,7 @@
         <label for="startdateandtime">Start Date and Time :</label>
         <label for="enddate">End Date :</label>
         <label for="customename">Customer Name :</label>
+        <label for="Location">Location :</label>
     </section>
     <section class="info1">
         <select name="site" id="site">
@@ -80,11 +81,17 @@
             <option value="customename2">customename2</option>
             <option value="customename3">customename3</option>
         </select>
+        <select name="Location" id="Location">
+            <option value="Locationselection" disabled selected>Select Location</option>
+            <option value="Location1">Location1</option>
+            <option value="Location2">Location2</option>
+            <option value="Location3">Location3</option>
+            <option value="Location1">Location4</option>
+            <option value="Location2">Location5</option>
+            <option value="Location3">Location6</option>
+        </select>
     </section>
-
-    
-
-    <section class="info2">
+    <!-- <section class="info2">
         <form action="/action_page.php"></form>
             <label for="input1">Input 1 :</label> 
             <label for="input2">Input 2 :</label>
@@ -122,14 +129,11 @@
             <input type="number"  id="input14" name="input14" maxlength="4" size="4"> <br>
             <input type="number"  id="input15" name="input15" maxlength="4" size="4"> <br>
         </form>
-    </section>
-
-
-
+    </section> -->
     <div class="grid-container">
         <div class="item1">  <h4>Device Location </h4>
             <div class="google-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12894.355088457492!2d77.53254372527599!3d28.805459928401515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf51f5aadb701%3A0x39add03eb3926d26!2sSRM%20Institute%20of%20Science%20and%20Technology%20NCR%20Campus!5e0!3m2!1sen!2sin!4v1678214093734!5m2!1sen!2sin" width="350" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12894.355088457492!2d77.53254372527599!3d28.805459928401515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf51f5aadb701%3A0x39add03eb3926d26!2sSRM%20Institute%20of%20Science%20and%20Technology%20NCR%20Campus!5e0!3m2!1sen!2sin!4v1678214093734!5m2!1sen!2sin" width="350" max-height=50%"; style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
         <div class="item2"><h4>Manufacturer Details</h4>
@@ -291,6 +295,79 @@
         </div>
         <div class="item7">
             <h4>Alarms</h4>
+                <div class="tab">
+                    <button class="tablinks1" onclick="openTab1(event, 'Input')" id="defaultOpen1">Input</button>
+                    <button class="tablinks1" onclick="openTab1(event, 'Info')">Info</button>
+                </div>
+                <div id="Input" class="tabcontent1">
+                    <div class="myDIV1">
+                    <table class="input1to7" >
+                        <tr>
+                          <td><label for="input1">Input 1 :</label></td>
+                          <td><input type="number"  id="input1" name="input1" maxlength="4" size="4"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="input2">Input 2 :</label></td>
+                            <td><input type="number"  id="input2" name="input2" maxlength="4" size="4"></td>
+                          </tr>
+                          <tr>
+                            <td><label for="input3">Input 3 :</label></td>
+                            <td><input type="number"  id="input3" name="input3" maxlength="4" size="4"></td>
+                          </tr>
+                          <tr>
+                            <td><label for="input4">Input 4 :</label></td>
+                            <td><input type="number"  id="input4" name="input4" maxlength="4" size="4"></td>
+                          </tr>
+                          <tr>
+                            <td><label for="input5">Input 5 :</label></td>
+                            <td><input type="number"  id="input5" name="input5" maxlength="4" size="4"></td>
+                          </tr>
+                          <tr>
+                            <td><label for="input6">Input 6 :</label></td>
+                            <td><input type="number"  id="input6" name="input6" maxlength="4" size="4"></td>
+                          </tr>
+                          <tr>
+                            <td><label for="input7">Input 7 :</label></td>
+                            <td><input type="number"  id="input7" name="input7" maxlength="4" size="4"></td>
+                          </tr>
+                      </table>
+                      <table class="input8to15" >
+                        <tr>
+                          <td><label for="input8">Input 8 :</label></td>
+                          <td><input type="number"  id="input8" name="input8" maxlength="4" size="4"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="input9">Input 9 :</label></td>
+                            <td><input type="number"  id="input9" name="input9" maxlength="4" size="4"></td>
+                          </tr>
+                          <tr>
+                            <td><label for="input10">Input 10 :</label></td>
+                            <td><input type="number"  id="input10" name="input10" maxlength="4" size="4"></td>
+                          </tr>
+                          <tr>
+                            <td><label for="input11">Input 11 :</label></td>
+                            <td><input type="number"  id="input11" name="input11" maxlength="4" size="4"></td>
+                          </tr>
+                          <tr>
+                            <td><label for="input12">Input 12 :</label></td>
+                            <td><input type="number"  id="input12" name="input12" maxlength="4" size="4"></td>
+                          </tr>
+                          <tr>
+                            <td><label for="input13">Input 13 :</label></td>
+                            <td><input type="number"  id="input13" name="input13" maxlength="4" size="4"></td>
+                          </tr>
+                          <tr>
+                            <td><label for="input14">Input 14 :</label></td>
+                            <td><input type="number"  id="input14" name="input14" maxlength="4" size="4"></td>
+                          </tr>
+                          <tr>
+                            <td><label for="input15">Input 15 :</label></td>
+                            <td><input type="number"  id="input15" name="input15" maxlength="4" size="4"></td>
+                          </tr>
+                      </table>
+                    </div>
+                </div>
+                <div id="Info" class="tabcontent1">
                 <div class="grid-container1">
                     <div class="batterystatus">
                         Battery Status
@@ -359,14 +436,15 @@
                             Not Communicating : 0
                         </p>
                     </div>
-                </div>             
+                </div>  
+            </div>           
         </div>
         <div class="item8">
             <h4>Cells Data</h4>
             <div class="tab">
-                <button class="tablinks" onclick="openCity(event, 'Pictorial')" id="defaultOpen">Pictorial</button>
-                <button class="tablinks" onclick="openCity(event, 'Graphical')">Graphical</button>
-                <button class="tablinks" onclick="openCity(event, 'Tabular')">Tabular</button>
+                <button class="tablinks" onclick="openTab(event, 'Pictorial')" id="defaultOpen">Pictorial</button>
+                <button class="tablinks" onclick="openTab(event, 'Graphical')">Graphical</button>
+                <button class="tablinks" onclick="openTab(event, 'Tabular')">Tabular</button>
             </div>
               
               <div id="Pictorial" class="tabcontent">
