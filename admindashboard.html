@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">  
+</head>
+<body>
+    <div class="cursor"></div>
+    <header> 
+        <a href="index.html" class="logo"> <img src="icon.png" alt="Logo VCI"> <span>Virtual Controls India pvt. LTD.</span></a>
+        <!-- <center> Battery Management </center> -->
+
+        <!-- <ul class="navbar">
+            <li><a href="#" class="active">Dashboard</a></li>
+            <li><a href="#">Real Time View</a></li>
+            <li><a href="#">Configuration</a></li>
+            <li><a href="#">Reports</a></li>
+        </ul> -->
+
+        <div class="main1">
+            <a href="#" class="user" title="Admin 1""><i class="ri-user-fill"></i>Admin 1</a>
+            <a href="login.html">Log out</a>
+            <div class="bx bx-menu" id="menu-icon"> </div>
+        </div>
+
+    </header>
+
+
+    <div class="grid-container2">
+        <div class="item1">  <h4>Information Panel </h4>
+            <div class="selectioninfo">
+                <table>
+                    <tr>
+                      <td>Circle : </td>
+                      <td>
+                        <select name="Location" id="Location">
+                            <option value="Locationselection" disabled selected>Select Circle</option>
+                            <option value="Location1">Delhi</option>
+                            <option value="Location2">Mumbai</option>
+                            <option value="Location3">Kolkata</option>
+                            <option value="Location1">Bangalore</option>
+                            <option value="Location2">Hyderabad</option>
+                            <option value="Location1">Delhi</option>
+                            <option value="Location2">Mumbai</option>
+                            <option value="Location3">Kolkata</option>
+                            <option value="Location1">Bangalore</option>
+                            <option value="Location2">Hyderabad</option>
+                            <option value="Location1">Delhi</option>
+                            <option value="Location2">Mumbai</option>
+                            <option value="Location3">Kolkata</option>
+                            <option value="Location1">Bangalore</option>
+                            <option value="Location2">Hyderabad</option>
+                            <option value="Location1">Delhi</option>
+                            <option value="Location2">Mumbai</option>
+                            <option value="Location3">Kolkata</option>
+                            <option value="Location1">Bangalore</option>
+                            <option value="Location2">Hyderabad</option>
+                            <option value="Location1">Delhi</option>
+                            <option value="Location2">Mumbai</option>
+                            <option value="Location3">Kolkata</option>
+                            <option value="Location1">Bangalore</option>
+                            <option value="Location2">Hyderabad</option>
+                            
+                        </select>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>Cell(s) with Low Voltages : </td>
+                        <td>
+                            <select name="Location" id="Location">
+                                <option value="Locationselection" disabled selected>Fetch/Ignore</option>
+                                <option value="Location1">Fetch</option>
+                                <option value="Location2">Ignore</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cell(s) with High Temperature : </td>
+                        <td>
+                            <select name="Location" id="Location">
+                                <option value="Locationselection" disabled selected>Fetch/Ignore</option>
+                                <option value="Location1">Fetch</option>
+                                <option value="Location2">Ignore</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Major alarms : </td>
+                        <td>
+                            <select name="Location" id="Location">
+                                <option value="Locationselection" disabled selected>Fetch/Ignore</option>
+                                <option value="Location1">Fetch</option>
+                                <option value="Location2">Ignore</option>
+                            </select>
+                    </tr>
+                    <tr>
+                        <td>Major sites alarms : </td>
+                        <td>
+                            <select name="Location" id="Location">
+                                <option value="Locationselection" disabled selected>Fetch/Ignore</option>
+                                <option value="Location1">Fetch</option>
+                                <option value="Location2">Ignore</option>
+                            </select>
+                        </td>
+                  </table>
+                  <input type="submit" value="Get Data ➣" id="btn2" onclick="window.print()">
+            </div>
+        </div>
+            <div class="item2"><h4>Alarm Details</h4>
+                <div class="selectioninfo">
+                    <table>
+                        <tr>
+                        <td>Circle : </td>
+                        <td>Delhi-1b</td>
+                        </tr>
+                        <tr>
+                            <td>Cell(s) with Low Voltages : </td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>Cell(s) with High Temperature : </td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>Major Alarms : </td>
+                        </tr>
+                        <tr>
+                            <td>Low Volatage : </td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>High Voltage : </td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Charging : </td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Discharged : </td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Major sites alarms : </td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Low Fuel in DiGi : </td>
+                            <td>3</td>
+                        </tr>
+                    </table>
+                    <input type="submit" value="Print ⧩" id="btn2" onclick="window.print()">
+
+                </div> 
+        </div>
+            
+        
+      </div>
+    
+     
+
+      <footer>
+        <center>All Copyrights preserved by Virtual Controls India pvt. LTD. © 2023-24</center>
+      </footer>
+
+    <script src="script.js"></script> 
+</body>
+</html>

@@ -135,11 +135,11 @@ h4{
     color: var(--main-color);
 }
 
-.main{
+.main1{
     display: flex;
 }
 
-.main a{
+.main1 a{
     margin-right: 25px;
     margin-left: 10px;
     color: var(--text-color);
@@ -148,7 +148,7 @@ h4{
     transition: all .50s ease;
 }
 
-.main a:hover{
+.main1 a:hover{
     color: var(--main-color);
 }
 
@@ -156,6 +156,7 @@ h4{
     display: flex;
     align-items: center;
 }
+
 
 .user i{
     color: var(--main-color);
@@ -192,7 +193,7 @@ h4{
     margin: 0px 10px;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 25px 20px;
+    padding: 7px 25px 7px;
 
 }
 
@@ -226,67 +227,8 @@ input[type=number] {
   box-sizing: border-box;
 }
 
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-  }
-  
-  .switch input { 
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #fbbf12;
-    background-image: linear-gradient(to right, #fbbf12 , #ffe085);
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  input:checked + .slider {
-    background-color: #2196F3;
-    background-image: linear-gradient(to left, #2196F3 , #6abbfc);
-  }
-  
-  input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
-  }
-  
-  input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-  }
-  
-  /* Rounded sliders */
-  .slider.round {
-    border-radius: 34px;
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
-  }
+
+
 
 select{
     border:none;
@@ -301,6 +243,13 @@ select{
 #btn,#enddate,#startdateandtime{
     padding: 10px;
     border-radius: 10px;
+}
+
+#btn2{
+  margin-top: 30px;
+  padding: 15px 130px;
+  border-radius: 10px;
+  font-size: 1.1rem;
 }
  
 
@@ -337,7 +286,7 @@ select{
     padding: 4px 1px 4px;
     font-size: 0.7rem;
     border-radius: 10px;
-    height: 255px;
+    height: 235px;
     overflow: hidden;
     overflow-y: scroll;
   }
@@ -347,14 +296,15 @@ select{
   }
 
   .grid-container .item8{
-    height: 510px;
+    height: 470px;
   }
 
   /* Google Map  */
   
   .google-map {
     overflow:hidden;
-    padding-bottom:65%;
+    padding-top:45%;
+    /* padding-bottom:20%; */
     position:relative;
     height:0;
 
@@ -515,6 +465,44 @@ select{
       ;
     }
 
+    /*Admin Page*/
+
+    .grid-container2 {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-areas:
+        '. .';
+      grid-gap: 7px;
+      /* background-color: #2196F3; */
+      padding: 5px;
+      margin-right: 4px;
+      margin-left: 4px;
+      justify-content: center;
+      align-items: center;
+      min-height: 96vh;
+    }
+    
+    .grid-container2 > div {
+      background-color: var(--main-color);
+      text-align: center;
+      padding: 10px 30px 4px;
+      font-size: 1.2rem;
+      border-radius: 10px;
+      height: 600px;
+      overflow: hidden;
+      overflow-y: scroll;
+      overflow-x: scroll;
+    }
+  
+    .grid-container2 > div:hover {
+      box-shadow: 45px 45px 45px 45px rgba(0, 0, 4, 0.37);
+    }
+
+    .selectioninfo{
+      padding-top: 20px;
+    }
+
+    /*Login and Registration Page*/
     main{
       display: flex;
       justify-content: center;

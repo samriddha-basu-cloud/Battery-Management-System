@@ -27,9 +27,9 @@
             <li><a href="#">Reports</a></li>
         </ul>
 
-        <div class="main">
-            <a href="login.html" class="user"><i class="ri-user-fill"></i>Sign In</a>
-            <a href="login.html">Register</a>
+        <div class="main1">
+            <a href="#" class="user" title="User 1""><i class="ri-user-fill"></i>User 1</a>
+            <a href="login.html">Log out</a>
             <div class="bx bx-menu" id="menu-icon"> </div>
         </div>
 
@@ -37,11 +37,11 @@
     <section class="info">
         <label for="site">Site Id :</label> 
         <label for="cellnumber">Cell Number :</label>
-        <label for="get">Get Details :</label>
         <label for="startdateandtime">Start Date and Time :</label>
         <label for="enddate">End Date :</label>
         <label for="customename">Customer Name :</label>
         <label for="Location">Location :</label>
+        <label for="get">Get Details :</label>
     </section>
     <section class="info1">
         <select name="site" id="site">
@@ -57,14 +57,6 @@
             <option value="cellnumber2">cellnumber2</option>
             <option value="cellnumber3">cellnumber3</option>
         </select>
-
-        <br>
-        <label class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-        </label>
-        
-
         <form action="/action_page.php">
             <input type="datetime-local" id="startdateandtime" name="startdateandtime">
             <input type="submit" id="btn">
@@ -90,6 +82,11 @@
             <option value="Location2">Location5</option>
             <option value="Location3">Location6</option>
         </select>
+        <br>
+        <label class="print">
+            <input type="submit" value="Print" id="btn" onclick="window.print()">
+            <!-- <span class="slider round"></span> -->
+        </label>
     </section>
     <!-- <section class="info2">
         <form action="/action_page.php"></form>
@@ -133,7 +130,7 @@
     <div class="grid-container">
         <div class="item1">  <h4>Device Location </h4>
             <div class="google-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12894.355088457492!2d77.53254372527599!3d28.805459928401515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf51f5aadb701%3A0x39add03eb3926d26!2sSRM%20Institute%20of%20Science%20and%20Technology%20NCR%20Campus!5e0!3m2!1sen!2sin!4v1678214093734!5m2!1sen!2sin" width="350" max-height=50%"; style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12894.355088457492!2d77.53254372527599!3d28.805459928401515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf51f5aadb701%3A0x39add03eb3926d26!2sSRM%20Institute%20of%20Science%20and%20Technology%20NCR%20Campus!5e0!3m2!1sen!2sin!4v1678214093734!5m2!1sen!2sin" width="20%" height="20%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
         <div class="item2"><h4>Manufacturer Details</h4>
