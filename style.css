@@ -109,7 +109,7 @@ h4{
 
 .logo span{
     color: var(--text-color);
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 
@@ -119,7 +119,7 @@ h4{
 
 .navbar a{
     color: var(--text-color);
-    font-size: 1rem;
+    font-size: 0.7rem;
     font-weight: 500;
     padding: 5px 0;
     margin: 0px 30px;
@@ -143,7 +143,7 @@ h4{
     margin-right: 25px;
     margin-left: 10px;
     color: var(--text-color);
-    font-size: 1rem;
+    font-size: 0.7rem;
     font-weight: 500;
     transition: all .50s ease;
 }
@@ -175,7 +175,7 @@ h4{
 .info{
     display: flex;
     color: var(--text-color);
-    font-size: 1rem;
+    font-size: 0.7rem;
     font-weight: 500;
     margin: 0px 10px;
     align-items: center;
@@ -187,7 +187,7 @@ h4{
 .info1{
     display: flex;
     color: var(--text-color);
-    font-size: 1rem;
+    font-size: 0.7rem;
     font-weight: 500;
     margin: 0px 10px;
     align-items: center;
@@ -199,7 +199,7 @@ h4{
 .info2{
   display: flex;
   color: var(--text-color);
-  font-size: 1rem;
+  font-size: 0.7rem;
   font-weight: 500;
   margin: 0px 10px;
   align-items: center;
@@ -210,7 +210,7 @@ h4{
 .info3{
   display: flex;
   color: var(--text-color);
-  font-size: 1rem;
+  font-size: 0.7rem;
   font-weight: 500;
   margin: 0px 10px;
   align-items: center;
@@ -335,12 +335,19 @@ select{
     background-color: var(--main-color);
     text-align: center;
     padding: 4px 1px 4px;
-    font-size: 1rem;
+    font-size: 0.7rem;
     border-radius: 10px;
+    height: 255px;
+    overflow: hidden;
+    overflow-y: scroll;
   }
 
   .grid-container > div:hover {
     box-shadow: 45px 45px 45px 45px rgba(0, 0, 4, 0.37);
+  }
+
+  .grid-container .item8{
+    height: 510px;
   }
 
   /* Google Map  */
@@ -381,6 +388,7 @@ select{
 
     footer{
         padding-top: 10px;
+        font-size: 0.7rem;
     }
 
     /* Alarms Grid */
@@ -400,7 +408,7 @@ select{
       background-color: rgba(255, 255, 255, 0.8);
       text-align: center;
       padding: 20px 0;
-      font-size: 0.8rem;
+      font-size: 0.7rem;
       color: #263238;
       border-radius: 10px;
     }
@@ -466,7 +474,7 @@ select{
       display: flex;
       align-items: center;
       justify-content: space-between;
-      font-size: 1.2rem;
+      font-size: 0.9rem;
     }
     .myDIV {
       color: #263238;
@@ -478,13 +486,15 @@ select{
       '. . . . . . . .'
       '. . . . . . . .'
       '. . . . . . . .';
+      overflow: hidden;
+      overflow-y: scroll;
     }
 
     .myDIV > div {
       background-color: rgba(255, 255, 255, 0.8);
       text-align: center;
       padding: 20px 0;
-      font-size: 1rem;
+      font-size: 0.7rem;
       border-radius: 10px;
       
     }
@@ -505,6 +515,133 @@ select{
       ;
     }
 
+    main{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 96vh;
+      padding-top: 40px;
+    }
+
+    .container{
+      padding: 40px;
+      border-radius: 20px;
+      border: 8px solid #263238;
+      box-shadow: -5px -5px 15px rgba(255,255,255,0.1), 
+      5px 5px 15px rgba(0,0,0,0.35),
+      inset -5px -5px 15px rgba(255,255,255,0.1), 
+      inset 5px 5px 15px rgba(0,0,0,0.35);
+    }
+
+    .container .form{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    
+
+    .container .form.signin,
+    .container.signinForm .form.signup{
+      display: none;
+      
+    }
+    
+    .container.signinForm .form.signin{
+      display: flex;
+    }
+
+    .container .form h2{
+      font-weight: 500;
+      letter-spacing: 0.1em;
+    }
+
+    .container .form .inputBox{
+      position: relative;
+      width: 300px;
+    }
+
+    .container .form .inputBox input{
+      padding: 12px 10px 12px 48px;
+      border: none;
+      width: 100%;
+      background: var(--bg-color);
+      border: 1px solid rgba(0,0,0,0.1);
+      color: #fff;
+      font-weight: 300;
+      border-radius: 25px;
+      font-size: 1em;
+      box-shadow: -5px -5px 15px rgba(255,255,255,0.1), 
+      5px 5px 15px rgba(0,0,0,0.35);
+      transition: 0.7s;
+      outline: none;
+    }
+
+    .container .form .inputBox span{
+      position: absolute;
+      left: 0;
+      padding: 12px 10px 12px 48px;
+      pointer-events: none;
+      font-size: 1em;
+      font-weight: 300;
+      transition: 0.7s;
+      letter-spacing: 0.05em;
+      color: rgba(255,255,255,0.5);
+    }
+
+    .container .form .inputBox input:valid ~ span,
+    .container .form .inputBox input:focus ~ span
+    {
+      color: #fbbf12;
+      border: 1px solid #fbbf12;
+      background: #263238;
+      transform: translateX(25px) translateY(-7px);
+      font-size: 0.6em;
+      padding: 0 8px;
+      border-radius: 10px;
+      letter-spacing: 0.1em;
+    }
+
+    .container .form .inputBox input:valid,
+    .container .form .inputBox input:focus{
+      border: 1px solid #fbbf12;
+    }
+
+    .container .form .inputBox i{
+      position: absolute;
+      top: 15px;
+      left: 16px;
+      width: 25px;
+      padding: 2px 0;
+      padding-right: 8px;
+      color: #fbbf12;
+      border-right: 1px solid #fbbf12;
+    }
+    
+    .container .form .inputBox input[type="submit"]
+    {
+      background: #fbbf12;
+      color: var(--bg-color);
+      padding: 10px 0;
+      font-weight: 500;
+      cursor: pointer;
+      box-shadow: -5px -5px 15px rgba(255,255,255,0.1), 
+      5px 5px 15px rgba(0,0,0,0.35),
+      inset -5px -5px 15px rgba(255,255,255,0.1), 
+      inset 5px 5px 15px rgba(0,0,0,0.35);
+    }
+    .container .form p{
+      color: rgba(255,255,255,0.5);
+      font-size: 0.75em;
+      font-weight: 300;
+    }
+
+    .container .form p a{
+      font-weight: 500;
+      color: #fff;
+    }
     
 
 @media(max-width: 1280px){

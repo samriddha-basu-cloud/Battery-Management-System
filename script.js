@@ -67,3 +67,6 @@ function openTab1(event, tabName) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen1").click();
+
+
+
