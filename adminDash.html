@@ -1,4 +1,15 @@
-<?php session_start(); 
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Test dash</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <?php session_start(); 
 if($_SESSION['username'] == 'admin' && $_SESSION['password'] == 'admin123') { ?>
 <?php include('head.php'); ?>
 <?php include('db.php'); ?>
@@ -271,3 +282,8 @@ if($_SESSION['username'] == 'admin' && $_SESSION['password'] == 'admin123') { ?>
 <?php } else {
   header('location: index.php');
 } ?>
+
+        
+        <script src="" async defer></script>
+    </body>
+</html>

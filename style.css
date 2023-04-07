@@ -8,19 +8,20 @@
 }
  
 :root{
-    --bg-color: #263238;
-    --text-color: #fff;
-    --main-color: #fbbf12;
+    --main-color: #DFAC1B;
+    --text-color: #212529;
+    --bg-color: #EFF3F6;
+    --nav-color: #5B6BE8;
 }
 
 ::-moz-selection { /* Code for Firefox */
     color: var(--main-color);
-    background: #2196F3;
+    background: #5B6BE8;
   }
   
   ::selection {
     color: var(--main-color);
-    background: #2196F3;
+    background: #5B6BE8;
   }
 
 body{
@@ -87,7 +88,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--bg-color);
+    background-color: var(--nav-color);
     padding: 18px 2%;
     transition: all .50s ease;
 }
@@ -274,7 +275,7 @@ select{
       '. . myArea2'
       '. . myArea2';
     grid-gap: 7px;
-    /* background-color: #2196F3; */
+    /* background-color: #5B6BE8; */
     padding: 5px;
     margin-right: 4px;
     margin-left: 4px;
@@ -332,8 +333,8 @@ select{
   }
   
   tr:hover {
-    background-color: #2196F3;
-    background-image: linear-gradient(to left, #2196F3 , #fbbf12);
+    background-color: #5B6BE8;
+    background-image: linear-gradient(to left, #5B6BE8 , #DFAC1B);
     }
 
     footer{
@@ -393,12 +394,12 @@ select{
     
     /* Change background color of buttons on hover */
     .tab button:hover {
-      background-color: #2196F3;
+      background-color: #5B6BE8;
     }
     
     /* Create an active/current tablink class */
     .tab button.active {
-      background-color: #2196F3;
+      background-color: #5B6BE8;
     }
     
     /* Style the tab content */
@@ -473,7 +474,7 @@ select{
       grid-template-areas:
         '. .';
       grid-gap: 7px;
-      /* background-color: #2196F3; */
+      /* background-color: #5B6BE8; */
       padding: 5px;
       margin-right: 4px;
       margin-left: 4px;
@@ -557,7 +558,7 @@ select{
       width: 100%;
       background: var(--bg-color);
       border: 1px solid rgba(0,0,0,0.1);
-      color: #fff;
+      color: #212529;
       font-weight: 300;
       border-radius: 25px;
       font-size: 1em;
@@ -582,8 +583,8 @@ select{
     .container .form .inputBox input:valid ~ span,
     .container .form .inputBox input:focus ~ span
     {
-      color: #fbbf12;
-      border: 1px solid #fbbf12;
+      color: #DFAC1B;
+      border: 1px solid #DFAC1B;
       background: #263238;
       transform: translateX(25px) translateY(-7px);
       font-size: 0.6em;
@@ -594,7 +595,7 @@ select{
 
     .container .form .inputBox input:valid,
     .container .form .inputBox input:focus{
-      border: 1px solid #fbbf12;
+      border: 1px solid #DFAC1B;
     }
 
     .container .form .inputBox i{
@@ -604,13 +605,13 @@ select{
       width: 25px;
       padding: 2px 0;
       padding-right: 8px;
-      color: #fbbf12;
-      border-right: 1px solid #fbbf12;
+      color: #DFAC1B;
+      border-right: 1px solid #DFAC1B;
     }
     
     .container .form .inputBox input[type="submit"]
     {
-      background: #fbbf12;
+      background: #DFAC1B;
       color: var(--bg-color);
       padding: 10px 0;
       font-weight: 500;
@@ -621,14 +622,14 @@ select{
       inset 5px 5px 15px rgba(0,0,0,0.35);
     }
     .container .form p{
-      color: rgba(255,255,255,0.5);
+      color: #212529;
       font-size: 0.75em;
       font-weight: 300;
     }
 
     .container .form p a{
       font-weight: 500;
-      color: #fff;
+      color: #212529;
     }
     
 
